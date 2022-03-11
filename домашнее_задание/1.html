@@ -31,7 +31,38 @@
 <script>
   "use strict";
 
+  /*
+  1. Найти по id, используя getElementById, элемент с id равным "super_link" и
+  вывести этот элемент в консоль.
+   */
+   console.log(document.getElementById("super_link"));
+  console.log('-----------------------------------------------------');
 
+  /*
+  2. Внутри всех элементов на странице, которые имеют класс "card-link",
+  поменяйте текст внутри элемента на "ссылка".
+   */
+  const cardLinkText = document.querySelectorAll('a');
+
+  for (const text of cardLinkText) {
+    text.innerText = 'ссылка';
+    console.log(text);
+  }
+  console.log('-----------------------------------------------------');
+
+  /*
+  3. Найти все элементы на странице с классом "card-link", которые лежат в
+  элементе с классом "card-body" и вывести полученную коллекцию в консоль.
+   */
+  console.log(document.getElementsByClassName('card-link'));
+  console.log('-----------------------------------------------------');
+  
+
+  /*
+  4. Найти первый попавшийся элемент на странице у которого есть атрибут
+  data-number со значением 50 и вывести его в консоль.
+   */
+  console.log(document.querySelector('a.card-link'));
 
 
   /*
